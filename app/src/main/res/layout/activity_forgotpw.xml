@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+<data>
+
+</data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_rectangle_1"
+    tools:context=".forgotpwActivity">
+
+    <TextView
+        android:id="@+id/textresetpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Reset Password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="cursive"
+        android:textSize="40dp"/>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@id/textresetpw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="#C4C4C4"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/newpw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/ic_rectangle_313"
+        android:layout_marginTop="60dp"
+        android:hint="new Password" />
+
+    <EditText
+        android:id="@+id/confirmnewpw"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_rectangle_313"
+        android:hint="confirm new password" />
+
+
+    <Button
+        android:id="@+id/btnresetpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Reset Password"
+        android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_ellipse_1"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_ellipse_2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
